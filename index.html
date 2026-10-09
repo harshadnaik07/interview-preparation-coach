@@ -1,113 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Interview Coach</title>
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-
-        <h2>🤖 AI Interview Coach</h2>
-
-       
-
-        <ul>
-
-            <li>
-                <a href="index.html">
-                    🏠 Dashboard
-                </a>
-            </li>
-
-            <li>
-                <a href="select.html">
-                    🎤 Start Interview
-                </a>
-            </li>
-
-            <li>
-                <a href="result.html">
-                    📊 Results
-                </a>
-            </li>
-
-           <li>
-                <a href="tips.html">
-                💡 Tips
-                </a>
-            </li>
-
-        </ul>
-         
-
-    </div>
-
-    <!-- Main Content -->
-    <div class="main">
-
-<div class="hero">
-    <div class="hero-left">
-        <h1>AI Interview Preparation Coach</h1>
-        <p>Practice interviews and improve your skills.</p>
-
-       <a href="select.html">
-    <button class="start-btn">
-        🎤 Start Interview
-    </button>
-</a>
-    </div>
-
-    <div class="hero-right">
-        <img src="image/robot 1.png">
-    </div>
-</div>
-
-        <div class="features">
-
-            <div class="card">
-                <h3>🎤 Voice Answers</h3>
-                <p>Speak instead of typing your answers.</p>
-            </div>
-
-            <div class="card">
-                <h3>🤖 Smart Feedback</h3>
-                <p>Receive instant suggestions.</p>
-            </div>
-
-            <div class="card">
-                <h3>📊 Reports</h3>
-                <p>Track your interview performance.</p>
-            </div>
-
-<div class="quote-banner">
-    <div class="quote-content">
-        <span class="quote-icon">❝</span>
-        <div>
-            <p class="quote-text">The more you practice,</p>
-            <h3>the better you get!</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Prepwise — Interview Coach</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <a class="brand" href="index.html"
+          ><i class="brand-mark">✦</i><span>prepwise</span></a
+        >
+        <nav class="nav">
+          <a href="index.html">⌂ <span>Dashboard</span></a
+          ><a href="select.html">◉ <span>Start practice</span></a
+          ><a href="result.html">▣ <span>My results</span></a
+          ><a href="tips.html">✦ <span>Coach notes</span></a>
+        </nav>
+        <div class="side-note">
+          Your private practice space.<br />Build confidence one answer at a
+          time.
         </div>
-    </div>
-
-    <div class="quote-image">
-        <img src="image/target.png" alt="Target">
-    </div>
-</div>
-
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">Your practice room</div>
+            <h1>Good to see you again.</h1>
+          </div>
+          <div class="user-pill">● Local session</div>
+        </header>
+        <section class="hero">
+          <div>
+            <div class="eyebrow">AI-powered practice</div>
+            <h2>Turn nerves into your next great answer.</h2>
+            <p>
+              Practice realistic interview questions, speak your answer out
+              loud, and get clear coaching on relevance, structure, and
+              confidence.
+            </p>
+            <div class="button-row">
+              <a class="primary" href="select.html"
+                >Start a practice session →</a
+              ><a class="secondary" href="tips.html">Read coach notes</a>
+            </div>
+          </div>
+          <div class="hero-art">◒</div>
+        </section>
+        <div class="section-head">
+          <div>
+            <h2>A calmer way to prepare</h2>
+            <div class="muted">Everything you need for focused practice.</div>
+          </div>
         </div>
-
+        <section class="grid">
+          <article class="card">
+            <div class="icon">◉</div>
+            <h3>Speak naturally</h3>
+            <p>
+              Use your microphone to turn your answer into a transcript, or type
+              when you prefer.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">✦</div>
+            <h3>Get useful feedback</h3>
+            <p>
+              See how relevant, structured, and detailed each answer is — not
+              just a random score.
+            </p>
+          </article>
+          <article class="card">
+            <div class="icon">↗</div>
+            <h3>Keep improving</h3>
+            <p>
+              Your latest session stays in this browser so you can notice
+              progress over time.
+            </p>
+          </article>
+        </section>
+        <section class="stat-row">
+          <article class="card">
+            <div class="muted">Last session</div>
+            <div class="stat-value" id="lastScore">—</div>
+          </article>
+          <article class="card">
+            <div class="muted">Questions practiced</div>
+            <div class="stat-value" id="questionCount">0</div>
+          </article>
+          <article class="card">
+            <div class="muted">Best focus</div>
+            <div class="stat-value" id="focus">—</div>
+          </article>
+        </section>
+      </main>
     </div>
-
-    <!-- Scripts -->
-    <script src="js/script.js"></script>
     <script src="js/theme.js"></script>
-
-</body>
-
+    <script>
+      const r = JSON.parse(localStorage.getItem("interviewResult") || "null");
+      if (r) {
+        lastScore.textContent = r.average + "/100";
+        questionCount.textContent = r.answers.length;
+        focus.textContent = r.average >= 75 ? "Clarity" : "Structure";
+      }
+    </script>
+  </body>
 </html>

@@ -1,0 +1,202 @@
+[
+  {
+    "domain": "hr",
+    "question": "Walk me through your background and the work you are most proud of.",
+    "keywords": [
+      "background",
+      "experience",
+      "project",
+      "skills"
+    ]
+  },
+  {
+    "domain": "hr",
+    "question": "Tell me about a time you handled a difficult challenge.",
+    "keywords": [
+      "situation",
+      "action",
+      "result",
+      "learn"
+    ]
+  },
+  {
+    "domain": "hr",
+    "question": "Why are you interested in this role?",
+    "keywords": [
+      "role",
+      "company",
+      "skills",
+      "growth"
+    ]
+  },
+  {
+    "domain": "hr",
+    "question": "Tell me about a time you disagreed with a teammate.",
+    "keywords": [
+      "disagree",
+      "listen",
+      "team",
+      "solution"
+    ]
+  },
+  {
+    "domain": "hr",
+    "question": "What would your previous manager say is your biggest strength?",
+    "keywords": [
+      "strength",
+      "feedback",
+      "example",
+      "impact"
+    ]
+  },
+  {
+    "domain": "frontend",
+    "question": "How would you build a responsive, accessible web page?",
+    "keywords": [
+      "responsive",
+      "semantic",
+      "accessibility",
+      "mobile"
+    ]
+  },
+  {
+    "domain": "frontend",
+    "question": "Explain the difference between state and props in a UI application.",
+    "keywords": [
+      "state",
+      "props",
+      "component",
+      "data"
+    ]
+  },
+  {
+    "domain": "frontend",
+    "question": "Tell me about a front-end project and a trade-off you made.",
+    "keywords": [
+      "project",
+      "users",
+      "performance",
+      "trade-off"
+    ]
+  },
+  {
+    "domain": "frontend",
+    "question": "How would you improve the performance of a slow web page?",
+    "keywords": [
+      "performance",
+      "network",
+      "cache",
+      "lazy"
+    ]
+  },
+  {
+    "domain": "frontend",
+    "question": "How do you test a user interface before shipping it?",
+    "keywords": [
+      "test",
+      "user",
+      "browser",
+      "automation"
+    ]
+  },
+  {
+    "domain": "data",
+    "question": "How would you explain a data insight to a non-technical stakeholder?",
+    "keywords": [
+      "insight",
+      "business",
+      "visual",
+      "simple"
+    ]
+  },
+  {
+    "domain": "data",
+    "question": "What is the difference between correlation and causation?",
+    "keywords": [
+      "relationship",
+      "cause",
+      "experiment",
+      "data"
+    ]
+  },
+  {
+    "domain": "data",
+    "question": "Describe a project where you cleaned or prepared messy data.",
+    "keywords": [
+      "missing",
+      "duplicate",
+      "validation",
+      "pipeline"
+    ]
+  },
+  {
+    "domain": "data",
+    "question": "How would you measure whether a model or analysis is successful?",
+    "keywords": [
+      "metric",
+      "baseline",
+      "measure",
+      "business"
+    ]
+  },
+  {
+    "domain": "data",
+    "question": "Tell me about a time your data changed a decision.",
+    "keywords": [
+      "data",
+      "decision",
+      "insight",
+      "impact"
+    ]
+  },
+  {
+    "domain": "python",
+    "question": "What makes Python useful for building software and data tools?",
+    "keywords": [
+      "language",
+      "readable",
+      "library",
+      "automation"
+    ]
+  },
+  {
+    "domain": "python",
+    "question": "When would you use a list, tuple, set, or dictionary?",
+    "keywords": [
+      "collection",
+      "mutable",
+      "unique",
+      "key"
+    ]
+  },
+  {
+    "domain": "python",
+    "question": "Explain how you would make a Python function easier to test.",
+    "keywords": [
+      "function",
+      "input",
+      "output",
+      "test"
+    ]
+  },
+  {
+    "domain": "python",
+    "question": "How would you diagnose a slow Python program?",
+    "keywords": [
+      "profile",
+      "performance",
+      "memory",
+      "algorithm"
+    ]
+  },
+  {
+    "domain": "python",
+    "question": "What is a clean way to handle errors in a Python application?",
+    "keywords": [
+      "error",
+      "exception",
+      "handle",
+      "logging"
+    ]
+  }
+]

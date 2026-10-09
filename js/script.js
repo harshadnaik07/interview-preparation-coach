@@ -1,13 +1,4 @@
-const startBtn =
-document.getElementById("startBtn");
-
-if(startBtn){
-
-startBtn.addEventListener("click",()=>{
-
-window.location.href =
-"select.html";
-
-});
-
+function resetSession() {
+  localStorage.removeItem("interviewSession");
+  localStorage.removeItem("interviewResult");
 }
